@@ -114,7 +114,7 @@ p {
   line-height: 1.65; }
 
 a {
-  color: #776e65;
+  color: red;
   font-weight: bold;
   text-decoration: underline;
   cursor: pointer; }
@@ -625,7 +625,7 @@ hr {
 
 .next-button, .restart-button, .menu-button {
   display: inline-block;
-  background: #8f7a66;
+  background: red;
   border-radius: 3px;
   padding: 0 20px;
   text-decoration: none;
