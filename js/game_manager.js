@@ -213,8 +213,8 @@ GameManager.prototype.setup = function ()
 	if(!this.loading)
 	{
 		this.actuate();
-		if(!this.isMenu && !this.isEditor)
-			window.analytics.boardStart(this.isRandom ? this.initialSeed : this.level+1, this.isRandom, this.setupInitBy);
+	//	if(!this.isMenu && !this.isEditor)
+	//		window.analytics.boardStart(this.isRandom ? this.initialSeed : this.level+1, this.isRandom, this.setupInitBy);
 	}
 };
 
@@ -283,7 +283,7 @@ GameManager.prototype.onSolverFindAnySolution = function (solver)
 		window.gm.actuate();
 		window.gm.actuator.setContextString("(Solving) Random - " + window.gm.initialSeed);
 		window.gm.loading = false;
-		window.analytics.boardStart(window.gm.isRandom ? window.gm.initialSeed : window.gm.level+1, window.gm.isRandom, window.gm.setupInitBy);
+		//window.analytics.boardStart(window.gm.isRandom ? window.gm.initialSeed : window.gm.level+1, window.gm.isRandom, window.gm.setupInitBy);
 	}
 };
 
@@ -619,12 +619,12 @@ GameManager.prototype.move = function (direction)
 				this.storageManager.setBestMovesToComplete(this.levelIdentifier, this.movesTaken);
 			}
 			this.won = true; // Game over!
-			window.analytics.levelScore(this.isRandom ? this.initialSeed : this.level+1, this.isRandom, this.medalLevelForCurrentMovesAndLevel(), this.movesTaken);
+			//window.analytics.levelScore(this.isRandom ? this.initialSeed : this.level+1, this.isRandom, this.medalLevelForCurrentMovesAndLevel(), this.movesTaken);
 		}
 		else if (!this.movesAvailable() || this.movesTaken >= this.maxMovesCurrentLevel())
 		{
 			this.over = true; // Game over!
-			window.analytics.levelLost(this.isRandom ? this.intialSeed : this.level+1, this.isRandom);
+			//window.analytics.levelLost(this.isRandom ? this.intialSeed : this.level+1, this.isRandom);
 		}
 	}
 

@@ -29,7 +29,7 @@ window.onLevelSelect = function (level)
 window.showMainMenu = function ()
 {
 	// track event back to menu
-	window.analytics.returnToMenu();
+	//window.analytics.returnToMenu();
 	
 	var size = 4;
 
