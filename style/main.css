@@ -434,7 +434,7 @@ hr {
   transition-property: transform; }
   .tile .tile-inner {
     border-radius: 3px;
-    background: #ffcccc;
+    background: #eee4da;
     text-align: center;
     font-weight: bold;
     z-index: 10;
@@ -694,7 +694,7 @@ hr {
     -ms-user-select: none;
     -ms-touch-action: none;
     touch-action: none;
-    background: #bbada0;
+    background: #F36;
     border-radius: 6px;
     width: 280px;
     height: 280px;
