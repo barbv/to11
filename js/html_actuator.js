@@ -212,7 +212,7 @@ HTMLActuator.prototype.updateNextButton = function ()
 HTMLActuator.prototype.showLoadingMessage = function (show)
 {
 	this.messageContainer.classList.add("game-loading");
-	this.messageContainer.getElementsByTagName("p")[0].textContent = "Loading...";
+	this.messageContainer.getElementsByTagName("p")[0].textContent = "So Loading...";
 	this.messageContainer.getElementsByClassName("won-medal")[0].classList.add("large-medal");
 	this.messageContainer.getElementsByClassName("won-medal")[0].classList.add("supermedal");
 };
@@ -220,7 +220,7 @@ HTMLActuator.prototype.showLoadingMessage = function (show)
 HTMLActuator.prototype.message = function (won)
 {
 	var type = won ? "game-won" : "game-over";
-	var message =  won ? "You win!" : "Too Many Moves!";
+	var message =  won ? "MUCH WIN!?!" : "Too Many Moves! :(";
 
 	this.messageContainer.classList.add(type);
 	this.messageContainer.getElementsByTagName("p")[0].textContent = message;
