@@ -194,7 +194,7 @@ HTMLActuator.prototype.updateBestScore = function (bestScore, perfect)
 
 HTMLActuator.prototype.updateSeed = function (seed)
 {
-	this.titleContainer.textContent = "to11";
+	this.titleContainer.textContent = "toDOGE";
 };
 
 HTMLActuator.prototype.updateNextButton = function ()
