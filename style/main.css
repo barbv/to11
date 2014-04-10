@@ -506,7 +506,8 @@ hr {
         font-size: 15px; } }
   .tile.tile-wall .tile-inner {
     color: #000000;
-    background: #000000;
+    background-image: url("./../images/block.gif");
+	background-size: cover; 
     font-size: 30px; }
     @media screen and (max-width: 520px) {
       .tile.tile-wall .tile-inner {
