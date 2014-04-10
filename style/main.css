@@ -162,7 +162,7 @@ hr {
   -ms-user-select: none;
   -ms-touch-action: none;
   touch-action: none;
-  background: #F0C;
+  background-image: url("./../images/rainbow.jpg");
   border-radius: 6px;
   width: 500px;
   height: 500px;
@@ -251,7 +251,8 @@ hr {
   margin-right: 15px;
   float: left;
   border-radius: 3px;
-  background-image: url("./../images/doge.jpeg");
+  background: #C9F;
+  background: rgba(255,153,255,.5);
   background-size:cover; }
   .grid-cell:last-child {
     margin-right: 0; }
